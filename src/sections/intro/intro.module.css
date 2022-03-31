@@ -1,0 +1,66 @@
+:root {
+    --color-background: #000119;
+    --stroke-width: calc(1em / 16);
+    --font-weight: 700;
+    --letter-spacing: calc(1em / 8);
+}
+section.wrap {
+    height: auto;
+    padding: 0;
+    background-color: var(--color-background);
+}
+.name {
+    font-size: 5em;
+    font-weight: 800;
+    color: #fff;
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: var(--stroke-width); */
+}
+.name > div {
+    transform: translate(-50%, -100%) !important;
+}
+.prefix {
+    font-size: 64px;
+    font-weight: bold;
+}
+.prefix > div {
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    letter-spacing: var(--letter-spacing);
+    padding: calc(--stroke-width / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: var(--stroke-width);
+}
+.prefix > div:first-child {
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+}
+.prefix > div:last-child {
+    background-image: linear-gradient(to left, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+}
+.noun {
+    font-size: 72px;
+    font-weight: 800;
+    color: transparent;
+}
+.noun > div {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 3px;
+}
+@media screen and (max-width: 768px) {
+    .name > div {
+        width: fit-content;
+        font-size: 36px;
+        transform: translate(-50%, -150%) !important;
+    }
+    .prefix {
+        font-size: 36px;
+    }
+    .scroll {
+        bottom: 110px;
+    }
+}

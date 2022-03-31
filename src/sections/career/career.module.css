@@ -1,0 +1,11 @@
+section.wrap{
+    background: #E3E3E3;
+    height: auto;
+    overflow-x: hidden;
+}
+.timeline {
+    padding: 4em 0 !important;
+}
+.subtitle {
+    margin-top: 10px;
+}

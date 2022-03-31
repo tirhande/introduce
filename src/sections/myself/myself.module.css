@@ -1,0 +1,119 @@
+section.wrap {
+    background: #BED8F4;
+}
+.myself_title {
+    height: 8%;
+}
+.contents {
+    height: 87%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 2% 10%;
+}
+article.picture {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: cadetblue;
+}
+.selfie_frame {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+.selfie {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+article.description {
+    width: 50%;
+    height: 40%;
+    background-color: blueviolet;
+}
+article.others {
+    width: 100%;
+    height: 50%;
+    /* width: 100%;
+    height: 100%; */
+    background-color: thistle;
+}
+/* .contents {
+    height: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    flex-wrap: nowrap;
+}
+.box {
+    width: 70%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.box article {
+    min-height: 200px;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+.box2 {
+    width: 70%;
+    height: 60%;
+}
+.picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: cadetblue;
+}
+.selfie_frame {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+.selfie {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.description {
+
+    background-color: blueviolet;
+}
+.others {
+    width: 100%;
+    height: 100%;
+    background-color: thistle;
+} */
+
+
+/* .selfie span img {
+    width: 100%;
+    height: 100%;
+} */
+/* section.wrap{
+    height: 600px;
+}
+.contents {
+    padding: 30%;
+}
+.title {
+    color: #000;
+    font-size: 36px;
+    font-weight: bold;
+} */
