@@ -17,6 +17,7 @@ import { ReactComponent as FigmaSVG } from '../../assets/images/tools/figma.svg'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
+
 const Skill = () => {
     const onEnter = (title) => {
         setToolList(toolList.map(el => {
@@ -70,16 +71,16 @@ const Skill = () => {
     ];
 
     const [toolList, setToolList] = useState([
-        {
-            title: '운영체제',
-            contents: [
-                {
-                    title: 'Linux',
-                    icon: LinuxSVG,
-                },
-            ],
-            isFlipped: false,
-        },
+        // {
+        //     title: '운영체제',
+        //     contents: [
+        //         {
+        //             title: 'Linux',
+        //             icon: LinuxSVG,
+        //         },
+        //     ],
+        //     isFlipped: false,
+        // },
         {
             title: 'IDE',
             contents: [
