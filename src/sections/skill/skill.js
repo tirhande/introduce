@@ -48,13 +48,13 @@ const Skill = () => {
             title: 'nodejs',
             icon: NodeSVG,
             color: '#689f63',
-            contents: ['Redis', 'socket.io, jwt-token', 'PM2'],
+            contents: ['socket.io, jwt-token', 'Redis', 'PM2'],
         },
         {
             title: 'javascript',
             icon: JsSVG,
             color: '#f0db4f',
-            contents: ['Canvas(Pixi), amCharts', 'jQuery'],
+            contents: ['Canvas(PixiJS), amCharts', 'jQuery'],
         },
         {
             title: 'python',

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 import Modal from 'react-modal';
+import styles from './dialog.module.css';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { useDispatch, useSelector } from 'react-redux';
 import { setDialogOpen } from '../redux/reducer/myselfSlice'
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleChevronRight, faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 
 const customStyles = {
     content: {
@@ -24,7 +26,7 @@ const options = {
     cMapPacked: true,
     standardFontDataUrl: 'standard_fonts/',
   };
-  
+
 
 const Dialog = () => {
     const dispatch = useDispatch();
@@ -56,23 +58,21 @@ const Dialog = () => {
     return (
         <Modal
             isOpen={dialogOpen}
-            // onAfterOpen={afterOpenModal}
             onRequestClose={closeDialog}
             style={customStyles}
             contentLabel="Example Modal"
             ariaHideApp={false}
         >
-            <div>
-                <Document file="./portfolio_kkh.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-                    <Page pageNumber={pageNumber} width={1200}/>
+            <span className={styles.btn_close}>
+                <FontAwesomeIcon icon={faXmarkCircle} onClick={closeDialog}/>
+            </span>
+            <div className={styles.pdf_container}>
+                <Document className={styles.pdf_document} file="./portfolio_kkh.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+                    {Array.from(new Array(numPages), (el, index) => (
+                        <Page className={styles.pdf_pages} key={`page_${index + 1}`} pageNumber={index + 1} width={1000}/>
+                    ))}
                 </Document>
-                <p>
-                    <FontAwesomeIcon icon={faCircleChevronLeft} size='2x' onClick={prevPage} />
-                    <FontAwesomeIcon icon={faCircleChevronRight} size='2x' onClick={nextPage} />
-                </p>
-                <p>Page {pageNumber} of {numPages}</p>
             </div>
-            <button onClick={closeDialog}>close</button>
         </Modal>
     )
 }
