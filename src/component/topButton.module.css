@@ -1,0 +1,16 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #505050;
+    width: 30px;
+    height: 30px;
+    right: 1em;
+    bottom: 1em;
+    position: fixed;
+    border-radius: 50%;
+    background-color: #fff;
+    box-Shadow: 0px 1px 3px 0px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 2px 1px -1px rgb(0 0 0 / 12%);
+    font-size: 1.2em;
+}
