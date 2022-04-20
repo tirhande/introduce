@@ -11,3 +11,8 @@ h1 {
     margin-bottom: 2%;
     color: #505050;
 }
+::-webkit-scrollbar{width:5px;height:5px;}
+::-webkit-scrollbar-track {background:rgb(50, 50, 50);}
+::-webkit-scrollbar-thumb {background:#878787;}
+::-webkit-scrollbar-thumb:hover {background:#666;}
+::-webkit-scrollbar-thumb:active {background:#666;}
